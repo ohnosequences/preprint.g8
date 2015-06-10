@@ -19,4 +19,4 @@ keywords: [cosas, keys, words, keys and words]
 
 # Introduction
 
-lalala!
+lalala! Take a look at [@Alcantara2013]

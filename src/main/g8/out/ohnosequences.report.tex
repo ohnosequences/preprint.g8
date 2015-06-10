@@ -1,5 +1,5 @@
 
-% \documentclass[a4paper]{article}  
+% \documentclass[a4paper]{article}
 \documentclass[fontsize=8pt,paper=a4,pagesize,abstracton]{scrartcl}
 
 % to prevent funny stuff happening with old packages (I think)
@@ -68,7 +68,7 @@
 \setstretch{1.15}
 
 % Activate to begin paragraphs with an empty line rather than an indent
-\usepackage{parskip} 
+\usepackage{parskip}
 
 % references
 
@@ -134,8 +134,8 @@ $endif$
 % default conf applied
 
 % Open Sans, a beautiful fontface
-\setmainfont[Mapping = tex-text, Color = Grey, BoldFont = {* Semibold}, BoldItalicFont = {* Semibold Italic}, ItalicFont = {* Italic}]{Open Sans} 
-% sort of like Cambria Math; somehow matches a sans body text 
+\setmainfont[Mapping = tex-text, Color = Grey, BoldFont = {* Semibold}, BoldItalicFont = {* Semibold Italic}, ItalicFont = {* Italic}]{Open Sans}
+% sort of like Cambria Math; somehow matches a sans body text
 \setmathfont{Asana Math} % math font
 % font for sections: Bitter
 \newfontfamily\sectfont
@@ -223,9 +223,9 @@ $if(verbatim-in-note)$
 \usepackage{fancyvrb}
 $endif$
 
-% Lists formatting: 
-% note sure what 'fancy enums' are; something to do with lists, 
-% as the further comment suggests: 
+% Lists formatting:
+% note sure what 'fancy enums' are; something to do with lists,
+% as the further comment suggests:
 $if(fancy-enums)$
 % -- Redefine labelwidth for lists; otherwise, the enumerate package will cause
 % -- markers to extend beyond the left margin.
@@ -322,7 +322,7 @@ $endif$
 % authors
 \usepackage{authblk}
 $for(authors)$
-  \author[1]{\normalsize $authors.name$} 
+  \author[1]{\normalsize $authors.name$}
 $endfor$
 
 \affil[1]{\small
@@ -394,13 +394,13 @@ to\headwidth{\color{Salmon}{\dotfill}}\vss}}
 % \begin{center}
 
 %   \begin{minipage}{.86\textwidth}\center\titlefont
-    
+
 %     \title{\huge {$title$}}
 
 %     {\flushleft
 %       \author{
-%         $for(author)$ 
-%           $author$ \and 
+%         $for(author)$
+%           $author$ \and
 %         $endfor$
 %       }
 %     }
