@@ -280,6 +280,10 @@ $endif$
 \let\OldHref\href
 \renewcommand{\href}[2]{\OldHref[pdfnewwindow]{#1}{{#2}}}
 
+% ugly fix for latest pandoc
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 % ugly fix for link colors in xetex
 \makeatletter
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
