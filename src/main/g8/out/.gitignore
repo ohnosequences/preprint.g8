@@ -1,6 +1,7 @@
 # TeX garbage
 paper.aux
 paper.log
+*.log
 paper.out
 paper.toc
 paper.bbl
