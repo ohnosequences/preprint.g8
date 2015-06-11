@@ -15,21 +15,7 @@ This will create a folder with everything that you might need. There you
 
 ## Generating PDF output
 
-Go into the `out` folder and run
-
-``` bash
-# do it from the `out` folder!
-./out.sh
-```
-
-You'll get the output in `out/paper.pdf`
-
-If you want your PDF file to be regenerated as soon as your source `paper.md` is modified,
-
-``` bash
-# do it from the `out` folder!
-./watch.sh
-```
+Run the `out.sh` script in the `out/` folder; you'll get the output in `out/paper.pdf`. If you want your PDF file to be regenerated as soon as your source `paper.md` is modified, run `watch.sh`, also in `out/`
 
 ## Bibliography
 
