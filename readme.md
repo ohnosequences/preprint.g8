@@ -44,7 +44,7 @@ For actually citing references in your preprint, read
 
 The key that you need to use is the one that you have in your `refs.bib` file; if you have an entry there starting with
 
-``` bibtex
+``` latex
 @article{Alcantara2013,
 % stuff here
 }
