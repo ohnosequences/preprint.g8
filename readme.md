@@ -1,6 +1,35 @@
 # A template for writing preprints
 
-Project description here.
+## Usage
+
+Do
+
+``` bash
+g8 ohnosequences/preprint
+```
+
+This will create a folder with everything that you might need. There you
+
+1. write your preprint in `paper.md`
+2. add your bibliography to `refs.bib` (see below for instructions)
+
+## Generating PDF output
+
+Go into the `out` folder and run
+
+``` bash
+# do it from the `out` folder!
+./out.sh
+```
+
+You'll get the output in `out/paper.pdf`
+
+If you want your PDF file to be regenerated as soon as your source `paper.md` is modified,
+
+``` bash
+# do it from the `out` folder!
+./watch.sh
+```
 
 ## Bibliography
 
@@ -26,3 +55,9 @@ You should cite that like so:
 ``` markdown
 See for example [@Alcantara2013 p 1-3].
 ```
+
+## Requirements
+
+- a LaTeX distribution (TeXLive or MacTeX are more than enough)
+- Pandoc
+- [entr](http://entrproject.org/) for the *regenerate on source changes* functionality
