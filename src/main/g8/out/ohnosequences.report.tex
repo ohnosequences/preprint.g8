@@ -113,7 +113,7 @@ $if(biblatex)$
 
 \DeclareFieldFormat{doi}{\newline DOI: \href{https://dx.doi.org/#1}{#1}}
 \DeclareFieldFormat{url}{}
-% \DeclareFieldFormat{url}{\newline URL: \href{#1}{#1}}
+\DeclareFieldFormat[unpublished]{url}{\newline URL: \href{#1}{#1}}
 \DeclareFieldFormat
   [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
   {journaltitle}{\newline\emph{#1}}
