@@ -89,11 +89,13 @@ $if(biblatex)$
   texencoding=utf8,
   bibencoding=utf8,
   hyperref=true,
-  maxbibnames=4,
+  maxbibnames=100,
   isbn=false,
   dateabbrev=false,
-  style=ieee
+  style=numeric
 ]{biblatex}
+
+\renewbibmacro{in:}{}
 
 \renewcommand*{\newunitpunct}{\space}
 \renewcommand{\bibfont}{\small}
@@ -111,15 +113,15 @@ $if(biblatex)$
 \DeclareFieldFormat{pages}{#1\adddot}
 \DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{number}{\mkbibparens{#1}\addcolon}
 
-\DeclareFieldFormat{doi}{\newline DOI: \href{https://dx.doi.org/#1}{#1}}
+\DeclareFieldFormat{doi}{\newline DOI:  \ttfamily\footnotesize\href{https://dx.doi.org/#1}{#1}}
 \DeclareFieldFormat{url}{}
-\DeclareFieldFormat[unpublished]{url}{\newline URL: \href{#1}{#1}}
+\DeclareFieldFormat[unpublished,misc,article]{url}{\newline URL: \ttfamily\footnotesize\href{#1}{#1}}
 \DeclareFieldFormat
-  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  [article,inbook,incollection,inproceedings,misc,patent,thesis,unpublished]
   {journaltitle}{\newline\emph{#1}}
 
 \DeclareFieldFormat
-  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  [article,inbook,book,incollection,misc,inproceedings,patent,thesis,unpublished]
   {title}{\textbf{#1}}
 
 \bibliography{$bibliography$}
